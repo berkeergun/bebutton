@@ -13,16 +13,28 @@ npm install --save bebutton
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'bebutton'
+import { Button } from 'bebutton'
+
 import 'bebutton/dist/index.css'
+import './index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <div style={{display:"flex" , flexDirection:"row"}}>
+      <Button text='Button Shadow Type' type='shadow' />
+      <Button text='Button Inset Shadow Type' type='insetShadow' />
+      <Button text='Button Text Shadow Type' type='textShadow' />
+      <Button text='Button Text Border Shadow Type' type='textBorderShadow' />
+      <Button text='Button Dotted Type' type='dotted' />
+      <Button text='Button Double Type' type='double' />
+      <Button text='Button Dashed Type' type='dashed' />
+    </div>
+  )
 }
+
+export default App
 ```
 
 ## License

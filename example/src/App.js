@@ -1,10 +1,22 @@
 import React from 'react'
 
-import { ExampleComponent } from 'bebutton'
+import { Button } from 'bebutton'
+
 import 'bebutton/dist/index.css'
+import './index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div style={{display:"flex" , flexDirection:"row"}}>
+      <Button text='Button Shadow Type' type='shadow' />
+      <Button text='Button Inset Shadow Type' type='insetShadow' />
+      <Button text='Button Text Shadow Type' type='textShadow' />
+      <Button text='Button Text Border Shadow Type' type='textBorderShadow' />
+      <Button text='Button Dotted Type' type='dotted' />
+      <Button text='Button Double Type' type='double' />
+      <Button text='Button Dashed Type' type='dashed' />
+    </div>
+  )
 }
 
 export default App
